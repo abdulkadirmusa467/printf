@@ -35,7 +35,8 @@ pfunc = get_print(*p);
 count += (pfunc)
 ? pfunc(arguments, &flags)
 : _printf("%%%c", *p);
-} else
+}
+else
 count += _putchar(*p);
 }
 _putchar(-1);
